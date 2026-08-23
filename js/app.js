@@ -1,4 +1,4 @@
-const API_BASE="http://127.0.0.1:8000";
+const API_BASE="https://localvibe-backend-umwl.onrender.com";
 
 async function sendToBackend(data){
   const r=await fetch(`${API_BASE}/api/enquiries`,{
