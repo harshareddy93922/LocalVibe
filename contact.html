@@ -1,8 +1,367 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact — LocalVibe</title><link rel="stylesheet" href="css/style.css"></head>
-<body><div class="topbar"><div class="container"><span>LocalVibe</span><span id="contactTop">Call / WhatsApp: +91 YOUR NUMBER · YOUR EMAIL</span></div></div>
-<nav><div class="container navin"><a class="logo" href="index.html">Local<span>Vibe</span></a><div class="navlinks"><a href="index.html#destinations">Destinations</a><a href="experiences.html">Experiences</a><a href="index.html#about">About</a></div></div></nav>
-<section class="contactsection"><div class="container contactgrid"><div><span class="eyebrow darkey">LET'S TALK</span><h1>Tell us where<br>you want to go.</h1><p>Share your destination, dates, group size and what kind of local experience you're looking for.</p><div class="contactdetails"><div><b>Phone / WhatsApp</b><span id="phoneDisplay">+91 YOUR NUMBER</span></div><div><b>Email</b><span id="emailDisplay">YOUR EMAIL</span></div></div></div>
-<form id="leadForm" class="form"><input type="hidden" id="interest"><label>Name<input id="name" required></label><label>Phone / WhatsApp<input id="phone" required></label><label>Email<input id="email" type="email"></label><label>Destination<input id="destination" placeholder="e.g. Kodaikanal, Hampi, Andhra village"></label><label>Travellers<select id="people"><option>1</option><option>2–4</option><option>5–10</option><option>10+</option></select></label><label>Travel dates<input id="dates" placeholder="Approximate dates"></label><label>What do you want to experience?<textarea id="message" required placeholder="Food, temples, villages, hills, local events..."></textarea></label><button class="btn orange" type="submit">Send enquiry →</button><p id="formMsg" class="notice"></p></form></div></section>
-<footer><div class="container"><span>© 2026 LocalVibe</span><a href="admin.html">Owner / Admin</a></div></footer>
-<script src="js/app.js"></script></body></html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Contact — TravelVibe</title>
+
+  <meta
+    name="description"
+    content="Contact TravelVibe to plan authentic local travel experiences across South India."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container">
+
+      <span>TravelVibe • South India</span>
+
+      <span id="contactTop">
+        Call / WhatsApp:
+        <a href="tel:+919392214698">
+          +91 9392214698
+        </a>
+        ·
+        <a href="mailto:travelvibeee@gmail.com">
+          travelvibeee@gmail.com
+        </a>
+      </span>
+
+    </div>
+  </div>
+
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container navin">
+
+      <a class="logo" href="index.html">
+        Travel<span>Vibe</span>
+      </a>
+
+      <div class="navlinks">
+
+        <a href="index.html#destinations">
+          Destinations
+        </a>
+
+        <a href="experiences.html">
+          Experiences
+        </a>
+
+        <a href="availability.html">
+          Upcoming Trips
+        </a>
+
+        <a href="index.html#about">
+          About
+        </a>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- CONTACT SECTION -->
+  <section class="contactsection">
+
+    <div class="container contactgrid">
+
+
+      <!-- LEFT SIDE -->
+      <div>
+
+        <span class="eyebrow darkey">
+          LET'S TALK
+        </span>
+
+        <h1>
+          Tell us where<br>
+          you want to go.
+        </h1>
+
+        <p>
+          Tell us what kind of experience you're looking for.
+          We'll help you discover the authentic side of South India.
+        </p>
+
+
+        <!-- CONTACT DETAILS -->
+        <div class="contactdetails">
+
+          <!-- PHONE -->
+          <div>
+
+            <b>
+              Phone / WhatsApp
+            </b>
+
+            <span>
+              <a href="tel:+919392214698">
+                +91 9392214698
+              </a>
+            </span>
+
+          </div>
+
+
+          <!-- EMAIL -->
+          <div>
+
+            <b>
+              Email
+            </b>
+
+            <span>
+              <a href="mailto:travelvibeee@gmail.com">
+                travelvibeee@gmail.com
+              </a>
+            </span>
+
+          </div>
+
+
+          <!-- INSTAGRAM -->
+          <div>
+
+            <b>
+              Instagram
+            </b>
+
+            <span>
+
+              <a
+                href="https://www.instagram.com/travelvibee4/"
+                target="_blank"
+                rel="noopener"
+              >
+                @travelvibee4
+              </a>
+
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ENQUIRY FORM -->
+      <form id="leadForm" class="form">
+
+        <input
+          type="hidden"
+          id="interest"
+        >
+
+
+        <!-- NAME -->
+        <label>
+          Name
+
+          <input
+            id="name"
+            type="text"
+            placeholder="Your name"
+            required
+          >
+
+        </label>
+
+
+        <!-- PHONE -->
+        <label>
+          Phone / WhatsApp
+
+          <input
+            id="phone"
+            type="tel"
+            placeholder="Your phone number"
+            required
+          >
+
+        </label>
+
+
+        <!-- EMAIL -->
+        <label>
+          Email
+
+          <input
+            id="email"
+            type="email"
+            placeholder="Your email address"
+          >
+
+        </label>
+
+
+        <!-- DESTINATION -->
+        <label>
+          Destination
+
+          <input
+            id="destination"
+            type="text"
+            placeholder="e.g. Andhra village, Hampi, Kerala"
+          >
+
+        </label>
+
+
+        <!-- TRAVELLERS -->
+        <label>
+          Travellers
+
+          <select id="people">
+
+            <option value="1">
+              1
+            </option>
+
+            <option value="2–4">
+              2–4
+            </option>
+
+            <option value="5–10">
+              5–10
+            </option>
+
+            <option value="10+">
+              10+
+            </option>
+
+          </select>
+
+        </label>
+
+
+        <!-- TRAVEL DATES -->
+        <label>
+          Travel dates
+
+          <input
+            id="dates"
+            type="text"
+            placeholder="e.g. 15 September 2026"
+          >
+
+        </label>
+
+
+        <!-- EXPERIENCE -->
+        <label>
+          What do you want to experience?
+
+          <textarea
+            id="message"
+            required
+            placeholder="Local food, village life, temples, camping, local stays, culture..."
+          ></textarea>
+
+        </label>
+
+
+        <!-- SUBMIT -->
+        <button
+          class="btn orange"
+          type="submit"
+        >
+          Send enquiry →
+        </button>
+
+
+        <!-- FORM MESSAGE -->
+        <p
+          id="formMsg"
+          class="notice"
+        ></p>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT STRIP -->
+  <section class="contact-strip">
+
+    <div class="container">
+
+      <h2>
+        Travel Like a Local. 🌴
+      </h2>
+
+      <p>
+        Don't just visit. Live the place.
+      </p>
+
+
+      <div class="contact-details">
+
+        <!-- PHONE -->
+        <a href="tel:+919392214698">
+          📞 +91 9392214698
+        </a>
+
+
+        <!-- WHATSAPP -->
+        <a
+          href="https://wa.me/919392214698"
+          target="_blank"
+          rel="noopener"
+        >
+          💬 WhatsApp
+        </a>
+
+
+        <!-- EMAIL -->
+        <a href="mailto:travelvibeee@gmail.com">
+          ✉️ travelvibeee@gmail.com
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <span>
+        © 2026 TravelVibe
+      </span>
+
+      <span>
+        Travel local · Respect culture · Support local
+      </span>
+
+      <a href="admin.html">
+        Owner / Admin
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
