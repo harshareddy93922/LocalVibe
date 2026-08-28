@@ -1,1 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Plan My Trip — TravelVibe</title>
+
+  <meta
+    name="description"
+    content="Plan your perfect local TravelVibe experience based on your destination, budget, group size and interests."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container">
+
+      <span>TravelVibe • South India</span>
+
+      <span>
+        Call / WhatsApp:
+        <a href="tel:+919392214698">+91 9392214698</a>
+        ·
+        <a href="mailto:travelvibeee@gmail.com">
+          travelvibeee@gmail.com
+        </a>
+      </span>
+
+    </div>
+  </div>
+
+
+  <!-- NAVIGATION -->
+  <nav>
+
+    <div class="container navin">
+
+      <a class="logo" href="index.html">
+        Travel<span>Vibe</span>
+      </a>
+
+      <div class="navlinks">
+
+        <a href="index.html#destinations">
+          Destinations
+        </a>
+
+        <a href="experiences.html">
+          Experiences
+        </a>
+
+        <a href="availability.html">
+          Upcoming Trips
+        </a>
+
+        <a href="planner.html" class="pill">
+          ✨ Plan My Trip
+        </a>
+
+        <a href="index.html#about">
+          About
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- PLANNER HERO -->
+  <section class="pagehero">
+
+    <div class="container">
+
+      <span class="eyebrow darkey">
+        TRAVELVIBE AI TRIP PLANNER
+      </span>
+
+      <h1>
+        Explore Local.<br>
+        <span>Set Your Budget.</span>
+      </h1>
+
+      <p>
+        Tell us where you're going, how many people are travelling,
+        how many days you have and what you want to experience.
+        We'll find your TravelVibe.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PLANNER -->
+  <section>
+
+    <div class="container">
+
+      <div class="planner-grid">
+
+        <!-- FORM -->
+        <form id="plannerForm" class="form">
+
+          <h2>
+            ✨ Plan My TravelVibe
+          </h2>
+
+          <p class="notice">
+            Give us your trip details and we'll create a
+            personalised experience for you.
+          </p>
+
+
+          <!-- DESTINATION -->
+          <label>
+            📍 Where are you going?
+
+            <input
+              id="plannerDestination"
+              type="text"
+              placeholder="e.g. Gandikota, Andhra Pradesh"
+              required
+            >
+
+          </label>
+
+
+          <!-- TRAVELLERS -->
+          <label>
+            👥 How many people?
+
+            <input
+              id="plannerTravellers"
+              type="number"
+              min="1"
+              max="100"
+              placeholder="e.g. 2"
+              required
+            >
+
+          </label>
+
+
+          <!-- DAYS -->
+          <label>
+            🗓️ How many days?
+
+            <input
+              id="plannerDays"
+              type="number"
+              min="1"
+              max="30"
+              placeholder="e.g. 2"
+              required
+            >
+
+          </label>
+
+
+          <!-- BUDGET -->
+          <label>
+            💰 What's your total budget?
+
+            <input
+              id="plannerBudget"
+              type="number"
+              min="0"
+              placeholder="e.g. 10000"
+              required
+            >
+
+          </label>
+
+
+          <!-- DATE -->
+          <label>
+            📅 Preferred travel date
+
+            <input
+              id="plannerDate"
+              type="date"
+            >
+
+          </label>
+
+
+          <!-- INTERESTS -->
+          <fieldset class="planner-interests">
+
+            <legend>
+              🌿 What do you want to experience?
+            </legend>
+
+            <label>
+              <input
+                type="checkbox"
+                name="interest"
+                value="Local food"
+              >
+              🍛 Local food
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="interest"
+                value="Nature"
+              >
+              🌿 Nature
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="interest"
+                value="Village life"
+              >
+              🌾 Village life
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="interest"
+                value="Culture"
+              >
+              🛕 Culture
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="interest"
+                value="Camping"
+              >
+              🏕️ Camping
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="interest"
+                value="Local stay"
+              >
+              🏡 Local stay
+            </label>
+
+          </fieldset>
+
+
+          <!-- SUBMIT -->
+          <button
+            class="btn orange"
+            type="submit"
+          >
+            ✨ Find My TravelVibe
+          </button>
+
+        </form>
+
+
+        <!-- RESULT -->
+        <div
+          id="plannerResult"
+          class="planner-result"
+        >
+
+          <div class="planner-placeholder">
+
+            <div class="planner-icon">
+              🌴
+            </div>
+
+            <h2>
+              Your TravelVibe starts here.
+            </h2>
+
+            <p>
+              Tell us your destination, budget,
+              group size and travel style.
+            </p>
+
+            <p>
+              We'll find the experience that fits you.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PHILOSOPHY -->
+  <section class="dark">
+
+    <div class="container center">
+
+      <span class="eyebrow">
+        THE TRAVELVIBE WAY
+      </span>
+
+      <h2>
+        Don't just visit.
+        <span>Live the place.</span>
+      </h2>
+
+      <p>
+        Authentic food. Local people. Local stays.
+        Nature. Culture. Stories. Experiences.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <span>
+        © 2026 TravelVibe
+      </span>
+
+      <span>
+        Travel local · Respect culture · Support local
+      </span>
+
+      <a href="admin.html">
+        Owner / Admin
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- TEMPORARY JAVASCRIPT -->
+  <script>
+
+    const plannerForm =
+      document.getElementById("plannerForm");
+
+    plannerForm.addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+      const destination =
+        document.getElementById("plannerDestination").value;
+
+      const travellers =
+        document.getElementById("plannerTravellers").value;
+
+      const days =
+        document.getElementById("plannerDays").value;
+
+      const budget =
+        document.getElementById("plannerBudget").value;
+
+      const date =
+        document.getElementById("plannerDate").value;
+
+
+      const interests =
+        Array.from(
+          document.querySelectorAll(
+            'input[name="interest"]:checked'
+          )
+        ).map(input => input.value);
+
+
+      const result =
+        document.getElementById("plannerResult");
+
+
+      result.innerHTML = `
+
+        <div class="planner-card">
+
+          <span class="eyebrow darkey">
+            YOUR TRAVELVIBE
+          </span>
+
+          <h2>
+            Let's plan your experience 🌴
+          </h2>
+
+          <p>
+            <strong>📍 Destination:</strong>
+            ${destination}
+          </p>
+
+          <p>
+            <strong>👥 Travellers:</strong>
+            ${travellers}
+          </p>
+
+          <p>
+            <strong>🗓️ Duration:</strong>
+            ${days} day(s)
+          </p>
+
+          <p>
+            <strong>💰 Budget:</strong>
+            ₹${Number(budget).toLocaleString("en-IN")}
+          </p>
+
+          <p>
+            <strong>📅 Preferred date:</strong>
+            ${date || "Flexible"}
+          </p>
+
+          <p>
+            <strong>🌿 Interests:</strong>
+            ${interests.length
+              ? interests.join(", ")
+              : "Not specified"}
+          </p>
+
+          <div class="planner-message">
+
+            ✨ We're checking the best
+            TravelVibe experience for you.
+
+            <br><br>
+
+            Our AI trip planner will soon
+            create your personalised itinerary.
+
+          </div>
+
+        </div>
+
+      `;
+
+    });
+
+  </script>
+
+</body>
+
+</html>
