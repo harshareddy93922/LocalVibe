@@ -22,222 +22,6 @@
     href="css/style.css"
   >
 
-  <style>
-
-    /* =====================================================
-       TRAVELVIBE AI PLANNER
-       ===================================================== */
-
-    .planner-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: start;
-    }
-
-    .form {
-      width: 100%;
-    }
-
-    .form label {
-      display: block;
-      margin-bottom: 20px;
-    }
-
-    .form input[type="text"],
-    .form input[type="number"],
-    .form input[type="date"] {
-      display: block;
-      width: 100%;
-      margin-top: 8px;
-      padding: 14px;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      font-size: 16px;
-      box-sizing: border-box;
-    }
-
-    .planner-interests {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 25px;
-    }
-
-    .planner-interests legend {
-      font-weight: 700;
-      padding: 0 8px;
-    }
-
-    .planner-interests label {
-      margin: 12px 0;
-      cursor: pointer;
-    }
-
-    .planner-interests input {
-      margin-right: 8px;
-    }
-
-    .planner-result {
-      min-height: 400px;
-      border-radius: 18px;
-    }
-
-    .planner-placeholder {
-      padding: 40px;
-      text-align: center;
-      border-radius: 18px;
-      background: #f7f7f7;
-    }
-
-    .planner-icon {
-      font-size: 50px;
-      margin-bottom: 15px;
-    }
-
-    .planner-card {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 30px;
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
-    }
-
-    .planner-card h2 {
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-
-    .planner-summary {
-      background: #f7f7f7;
-      border-radius: 14px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .planner-summary p {
-      margin: 8px 0;
-    }
-
-    .ai-plan {
-      margin-top: 25px;
-      line-height: 1.7;
-    }
-
-    .ai-plan-content {
-      white-space: pre-wrap;
-      font-size: 16px;
-      line-height: 1.75;
-    }
-
-    .planner-actions {
-      margin-top: 25px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .planner-actions a {
-      text-decoration: none;
-    }
-
-    .planner-loading {
-      padding: 50px 30px;
-      text-align: center;
-      background: #f7f7f7;
-      border-radius: 18px;
-    }
-
-    .loading-icon {
-      font-size: 45px;
-      margin-bottom: 15px;
-      animation: travelvibe-spin 1.5s infinite ease-in-out;
-    }
-
-    @keyframes travelvibe-spin {
-
-      0% {
-        transform: scale(1);
-      }
-
-      50% {
-        transform: scale(1.15);
-      }
-
-      100% {
-        transform: scale(1);
-      }
-
-    }
-
-    .planner-error {
-      padding: 30px;
-      border-radius: 18px;
-      background: #fff3f3;
-      border: 1px solid #f0caca;
-    }
-
-    .planner-error h2 {
-      color: #b00020;
-    }
-
-    .budget-box {
-      margin-top: 20px;
-      padding: 20px;
-      border-radius: 14px;
-      background: #fff7ed;
-    }
-
-    .budget-total {
-      font-size: 26px;
-      font-weight: 800;
-    }
-
-    .budget-person {
-      margin-top: 5px;
-      font-size: 15px;
-    }
-
-    .include-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 15px;
-    }
-
-    .include-item {
-      padding: 8px 12px;
-      border-radius: 20px;
-      background: #f1f1f1;
-      font-size: 14px;
-    }
-
-    .notice {
-      line-height: 1.6;
-    }
-
-    .btn:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
-
-    @media (max-width: 800px) {
-
-      .planner-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .planner-card {
-        padding: 22px;
-      }
-
-      .planner-placeholder {
-        padding: 30px 20px;
-      }
-
-    }
-
-  </style>
-
 </head>
 
 
@@ -246,7 +30,7 @@
 
   <!-- =====================================================
        TOP BAR
-       ===================================================== -->
+  ====================================================== -->
 
   <div class="topbar">
 
@@ -280,7 +64,7 @@
 
   <!-- =====================================================
        NAVIGATION
-       ===================================================== -->
+  ====================================================== -->
 
   <nav>
 
@@ -332,8 +116,8 @@
 
 
   <!-- =====================================================
-       PLANNER HERO
-       ===================================================== -->
+       HERO
+  ====================================================== -->
 
   <section class="pagehero">
 
@@ -344,25 +128,15 @@
       </span>
 
       <h1>
-
         Explore Local.<br>
-
-        <span>
-          Set Your Budget.
-        </span>
-
+        <span>Set Your Budget.</span>
       </h1>
 
       <p>
-
-        Tell us where you're going,
-        how many people are travelling,
-        how many days you have,
-        your budget and what you want
-        to experience.
-
+        Tell us where you're going, how many people are
+        travelling, how many days you have, your budget
+        and what you want to experience.
         We'll find your TravelVibe.
-
       </p>
 
     </div>
@@ -373,7 +147,7 @@
 
   <!-- =====================================================
        PLANNER
-       ===================================================== -->
+  ====================================================== -->
 
   <section>
 
@@ -384,7 +158,7 @@
 
         <!-- =================================================
              FORM
-             ================================================= -->
+        ================================================== -->
 
         <form
           id="plannerForm"
@@ -396,12 +170,10 @@
           </h2>
 
           <p class="notice">
-
-            Tell us about your trip
-            and we'll create an experience
-            around you.
-
+            Tell us about your trip and we'll create an
+            experience around you.
           </p>
+
 
 
           <!-- DESTINATION -->
@@ -418,6 +190,7 @@
             >
 
           </label>
+
 
 
           <!-- TRAVELLERS -->
@@ -438,6 +211,7 @@
           </label>
 
 
+
           <!-- DAYS -->
 
           <label>
@@ -454,6 +228,7 @@
             >
 
           </label>
+
 
 
           <!-- BUDGET -->
@@ -473,6 +248,7 @@
           </label>
 
 
+
           <!-- DATE -->
 
           <label>
@@ -485,6 +261,7 @@
             >
 
           </label>
+
 
 
           <!-- INTERESTS -->
@@ -576,16 +353,14 @@
           </fieldset>
 
 
+
           <!-- SUBMIT -->
 
           <button
-            id="plannerSubmit"
             class="btn orange"
             type="submit"
           >
-
             ✨ Find My TravelVibe
-
           </button>
 
         </form>
@@ -594,7 +369,7 @@
 
         <!-- =================================================
              RESULT
-             ================================================= -->
+        ================================================== -->
 
         <div
           id="plannerResult"
@@ -612,24 +387,17 @@
             </h2>
 
             <p>
-
-              Tell us your destination,
-              budget, group size and
-              travel style.
-
+              Tell us your destination, budget,
+              group size and travel style.
             </p>
 
             <p>
-
-              We'll find the experience
-              that fits you.
-
+              We'll find the experience that fits you.
             </p>
 
           </div>
 
         </div>
-
 
       </div>
 
@@ -641,7 +409,7 @@
 
   <!-- =====================================================
        PHILOSOPHY
-       ===================================================== -->
+  ====================================================== -->
 
   <section class="dark">
 
@@ -652,25 +420,13 @@
       </span>
 
       <h2>
-
         Don't just visit.
-
-        <span>
-          Live the place.
-        </span>
-
+        <span>Live the place.</span>
       </h2>
 
       <p>
-
-        Authentic food.
-        Local people.
-        Local stays.
-        Nature.
-        Culture.
-        Stories.
-        Experiences.
-
+        Authentic food. Local people. Local stays.
+        Nature. Culture. Stories. Experiences.
       </p>
 
     </div>
@@ -681,7 +437,7 @@
 
   <!-- =====================================================
        FOOTER
-       ===================================================== -->
+  ====================================================== -->
 
   <footer>
 
@@ -706,133 +462,314 @@
 
 
   <!-- =====================================================
-       TRAVELVIBE AI PLANNER JAVASCRIPT
-       ===================================================== -->
+       JAVASCRIPT
+  ====================================================== -->
 
   <script>
 
-    /*
-     * =====================================================
-     * BACKEND API
-     * =====================================================
-     */
+
+    // =====================================================
+    // API
+    // =====================================================
 
     const API_URL =
       "https://localvibe-backend-umwl.onrender.com/api/planner/recommend";
 
 
-    /*
-     * =====================================================
-     * ELEMENTS
-     * =====================================================
-     */
+
+    // =====================================================
+    // ELEMENTS
+    // =====================================================
 
     const plannerForm =
-      document.getElementById("plannerForm");
+      document.getElementById(
+        "plannerForm"
+      );
 
     const plannerResult =
-      document.getElementById("plannerResult");
+      document.getElementById(
+        "plannerResult"
+      );
 
-    const plannerSubmit =
-      document.getElementById("plannerSubmit");
+    const plannerDate =
+      document.getElementById(
+        "plannerDate"
+      );
 
 
-    /*
-     * =====================================================
-     * FORM SUBMISSION
-     * =====================================================
-     */
+
+    // =====================================================
+    // PREVENT PAST DATES
+    // =====================================================
+
+    const today =
+      new Date();
+
+    const year =
+      today.getFullYear();
+
+    const month =
+      String(
+        today.getMonth() + 1
+      ).padStart(2, "0");
+
+    const day =
+      String(
+        today.getDate()
+      ).padStart(2, "0");
+
+    const todayString =
+      `${year}-${month}-${day}`;
+
+    plannerDate.min =
+      todayString;
+
+
+
+    // =====================================================
+    // ESCAPE HTML
+    // =====================================================
+    //
+    // Prevent customer input from being inserted directly
+    // as HTML.
+    //
+    // =====================================================
+
+    function escapeHtml(value) {
+
+      if (value === null ||
+          value === undefined) {
+
+        return "";
+
+      }
+
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+    }
+
+
+
+    // =====================================================
+    // FORMAT AI RESPONSE
+    // =====================================================
+
+    function formatAIPlan(text) {
+
+      if (!text) {
+
+        return "";
+
+      }
+
+
+      let safeText =
+        escapeHtml(text);
+
+
+      /*
+       * Convert line breaks.
+       */
+
+      safeText =
+        safeText.replace(
+          /\n/g,
+          "<br>"
+        );
+
+
+      /*
+       * Make headings visually stronger.
+       */
+
+      const headings = [
+
+        "🌴 YOUR TRAVELVIBE",
+
+        "📍 Destination",
+
+        "🗓️ Suggested Experience",
+
+        "🍛 What You Can Experience",
+
+        "💰 Your Budget",
+
+        "🤝 What Happens Next"
+
+      ];
+
+
+      headings.forEach(
+        function(heading) {
+
+          safeText =
+            safeText.replace(
+              heading,
+              `<strong>${heading}</strong>`
+            );
+
+        }
+      );
+
+
+      return safeText;
+
+    }
+
+
+
+    // =====================================================
+    // SEND ENQUIRY
+    // =====================================================
+
+    function sendEnquiry() {
+
+      const destination =
+        document.getElementById(
+          "plannerDestination"
+        ).value;
+
+      const travellers =
+        document.getElementById(
+          "plannerTravellers"
+        ).value;
+
+      const days =
+        document.getElementById(
+          "plannerDays"
+        ).value;
+
+      const budget =
+        document.getElementById(
+          "plannerBudget"
+        ).value;
+
+      const date =
+        document.getElementById(
+          "plannerDate"
+        ).value;
+
+
+      const interests =
+        Array.from(
+          document.querySelectorAll(
+            'input[name="interest"]:checked'
+          )
+        )
+        .map(
+          input => input.value
+        );
+
+
+      const params =
+        new URLSearchParams({
+
+          destination:
+            destination,
+
+          people:
+            travellers,
+
+          days:
+            days,
+
+          budget:
+            budget,
+
+          date:
+            date,
+
+          interests:
+            interests.join(", ")
+
+        });
+
+
+      window.location.href =
+        `contact.html?${params.toString()}`;
+
+    }
+
+
+
+    // =====================================================
+    // FORM SUBMIT
+    // =====================================================
 
     plannerForm.addEventListener(
       "submit",
-      async function (event) {
+      async function(event) {
 
         event.preventDefault();
 
 
-        /*
-         * -----------------------------------------------
-         * GET FORM VALUES
-         * -----------------------------------------------
-         */
+        // -------------------------------------------------
+        // Read values
+        // -------------------------------------------------
 
         const destination =
-          document
-            .getElementById("plannerDestination")
-            .value
-            .trim();
+          document.getElementById(
+            "plannerDestination"
+          ).value.trim();
 
 
         const travellers =
           Number(
-            document
-              .getElementById("plannerTravellers")
-              .value
+            document.getElementById(
+              "plannerTravellers"
+            ).value
           );
 
 
         const days =
           Number(
-            document
-              .getElementById("plannerDays")
-              .value
+            document.getElementById(
+              "plannerDays"
+            ).value
           );
 
 
         const budget =
           Number(
-            document
-              .getElementById("plannerBudget")
-              .value
+            document.getElementById(
+              "plannerBudget"
+            ).value
           );
 
 
         const date =
-          document
-            .getElementById("plannerDate")
-            .value;
+          document.getElementById(
+            "plannerDate"
+          ).value;
 
-
-        /*
-         * -----------------------------------------------
-         * GET SELECTED INTERESTS
-         * -----------------------------------------------
-         */
 
         const interests =
           Array.from(
             document.querySelectorAll(
               'input[name="interest"]:checked'
             )
-          ).map(
+          )
+          .map(
             input => input.value
           );
 
 
-        /*
-         * -----------------------------------------------
-         * BASIC VALIDATION
-         * -----------------------------------------------
-         */
-
-        if (!destination) {
-
-          alert(
-            "Please enter your destination."
-          );
-
-          return;
-
-        }
-
+        // -------------------------------------------------
+        // Validate date
+        // -------------------------------------------------
 
         if (
-          !travellers ||
-          travellers < 1
+          date &&
+          date < todayString
         ) {
 
           alert(
-            "Please enter the number of travellers."
+            "Please select a future travel date."
           );
 
           return;
@@ -840,66 +777,30 @@
         }
 
 
-        if (
-          !days ||
-          days < 1
-        ) {
-
-          alert(
-            "Please enter the number of days."
-          );
-
-          return;
-
-        }
-
-
-        if (
-          !budget ||
-          budget <= 0
-        ) {
-
-          alert(
-            "Please enter your total budget."
-          );
-
-          return;
-
-        }
-
-
-        /*
-         * -----------------------------------------------
-         * SHOW LOADING
-         * -----------------------------------------------
-         */
-
-        plannerSubmit.disabled = true;
-
-        plannerSubmit.innerText =
-          "✨ Creating Your TravelVibe...";
-
+        // -------------------------------------------------
+        // Loading state
+        // -------------------------------------------------
 
         plannerResult.innerHTML = `
 
-          <div class="planner-loading">
+          <div class="planner-card">
 
-            <div class="loading-icon">
+            <div class="planner-icon">
               🌴
             </div>
 
             <h2>
-              Finding Your TravelVibe...
+              Finding your TravelVibe...
             </h2>
 
             <p>
-              We're checking your budget,
-              experiences and creating
-              your personalized trip.
+              We're checking your destination,
+              budget and travel preferences.
             </p>
 
             <p>
-              Please wait a moment...
+              ✨ Our AI is creating your
+              personalized experience.
             </p>
 
           </div>
@@ -907,38 +808,30 @@
         `;
 
 
-        /*
-         * -----------------------------------------------
-         * REQUEST BODY
-         * -----------------------------------------------
-         */
+        // -------------------------------------------------
+        // Disable button
+        // -------------------------------------------------
 
-        const requestData = {
+        const submitButton =
+          plannerForm.querySelector(
+            'button[type="submit"]'
+          );
 
-          destination: destination,
 
-          travellers: travellers,
+        submitButton.disabled =
+          true;
 
-          days: days,
 
-          budget: budget,
-
-          preferred_date:
-            date || null,
-
-          interests: interests
-
-        };
+        submitButton.textContent =
+          "✨ Creating Your TravelVibe...";
 
 
         try {
 
 
-          /*
-           * ---------------------------------------------
-           * CALL FASTAPI
-           * ---------------------------------------------
-           */
+          // =================================================
+          // API REQUEST
+          // =================================================
 
           const response =
             await fetch(
@@ -958,50 +851,86 @@
                 },
 
                 body:
-                  JSON.stringify(
-                    requestData
-                  )
+                  JSON.stringify({
+
+                    destination:
+                      destination,
+
+                    travellers:
+                      travellers,
+
+                    days:
+                      days,
+
+                    budget:
+                      budget,
+
+                    preferred_date:
+                      date || null,
+
+                    interests:
+                      interests
+
+                  })
 
               }
             );
 
 
-          /*
-           * ---------------------------------------------
-           * CHECK HTTP RESPONSE
-           * ---------------------------------------------
-           */
+          // =================================================
+          // HTTP ERROR
+          // =================================================
 
           if (!response.ok) {
 
             throw new Error(
-              `Server returned ${response.status}`
+              `Server error: ${response.status}`
             );
 
           }
 
 
-          /*
-           * ---------------------------------------------
-           * READ JSON
-           * ---------------------------------------------
-           */
+          // =================================================
+          // JSON
+          // =================================================
 
           const data =
             await response.json();
 
 
-          /*
-           * ---------------------------------------------
-           * HANDLE NO MATCH
-           * ---------------------------------------------
-           */
+          // =================================================
+          // BUDGET FALLBACK
+          // =================================================
 
-          if (!data.success) {
+          if (
+            data.success === false &&
+            data.recommended_budget
+          ) {
 
-            const budgetPerPerson =
+            const recommended =
               Number(
-                data.budget_per_person || 0
+                data.recommended_budget
+              )
+              .toLocaleString(
+                "en-IN"
+              );
+
+
+            const currentBudget =
+              Number(
+                data.total_budget
+              )
+              .toLocaleString(
+                "en-IN"
+              );
+
+
+            const recommendedPerPerson =
+              Number(
+                data.recommended_budget_per_person
+              )
+              .toLocaleString(
+                "en-IN"
               );
 
 
@@ -1014,61 +943,75 @@
                 </span>
 
                 <h2>
-                  Let's find a better fit 🌿
+                  You're close! 🌿
                 </h2>
 
-                <div class="planner-summary">
+                <p>
+                  <strong>
+                    📍 Destination:
+                  </strong>
+                  ${escapeHtml(
+                    data.destination
+                  )}
+                </p>
 
-                  <p>
-                    <strong>📍 Destination:</strong>
-                    ${escapeHtml(data.destination)}
-                  </p>
+                <p>
+                  <strong>
+                    👥 Travellers:
+                  </strong>
+                  ${data.travellers}
+                </p>
 
-                  <p>
-                    <strong>👥 Travellers:</strong>
-                    ${data.travellers}
-                  </p>
+                <p>
+                  <strong>
+                    🗓️ Duration:
+                  </strong>
+                  ${data.days} day(s)
+                </p>
 
-                  <p>
-                    <strong>🗓️ Duration:</strong>
-                    ${data.days} day(s)
-                  </p>
-
-                  <p>
-                    <strong>💰 Your Budget:</strong>
-                    ₹${Number(data.total_budget).toLocaleString("en-IN")}
-                  </p>
-
-                  <p>
-                    <strong>💰 Budget per person:</strong>
-                    ₹${budgetPerPerson.toLocaleString("en-IN")}
-                  </p>
-
-                </div>
 
                 <div class="planner-message">
 
-                  🌿 ${escapeHtml(data.message)}
+                  <h3>
+                    💰 Your Budget
+                  </h3>
 
-                  <br><br>
+                  <p>
+                    Current budget:
+                    <strong>
+                      ₹${currentBudget}
+                    </strong>
+                  </p>
 
-                  Tell us your preferred budget
-                  or contact TravelVibe and we'll
-                  help create the best possible
-                  experience for you.
+                  <p>
+                    Recommended budget:
+                    <strong>
+                      ₹${recommended}
+                    </strong>
+                  </p>
+
+                  <p>
+                    Approximately
+                    ₹${recommendedPerPerson}
+                    per person.
+                  </p>
+
+                  <p>
+                    ${escapeHtml(
+                      data.message
+                    )}
+                  </p>
 
                 </div>
 
-                <div class="planner-actions">
 
-                  <a
-                    class="btn orange"
-                    href="contact.html"
-                  >
-                    Send Enquiry →
-                  </a>
-
-                </div>
+                <button
+                  class="btn orange"
+                  type="button"
+                  onclick="sendEnquiry()"
+                >
+                  Send Enquiry →
+                </button>
 
               </div>
 
@@ -1080,120 +1023,103 @@
           }
 
 
-          /*
-           * ---------------------------------------------
-           * SUCCESSFUL RESULT
-           * ---------------------------------------------
-           */
+
+          // =================================================
+          // NORMAL RESULT
+          // =================================================
 
           const totalBudget =
             Number(
-              data.total_budget || 0
+              data.total_budget
+            )
+            .toLocaleString(
+              "en-IN"
             );
 
 
           const budgetPerPerson =
             Number(
-              data.budget_per_person || 0
+              data.budget_per_person
+            )
+            .toLocaleString(
+              "en-IN"
             );
 
 
-          /*
-           * ---------------------------------------------
-           * BUILD INCLUSIONS
-           * ---------------------------------------------
-           */
+          // -------------------------------------------------
+          // Included experiences
+          // -------------------------------------------------
 
           const includes =
             data.includes || {};
 
 
-          const inclusionLabels = [];
+          let badges = "";
 
 
           if (includes.food) {
 
-            inclusionLabels.push(
-              "🍛 Local food"
-            );
+            badges += `
+              <span>🍛 Local food</span>
+            `;
 
           }
 
 
           if (includes.stay) {
 
-            inclusionLabels.push(
-              "🏡 Local stay"
-            );
-
-          }
-
-
-          if (includes.camping) {
-
-            inclusionLabels.push(
-              "🏕️ Camping"
-            );
+            badges += `
+              <span>🏡 Local stay</span>
+            `;
 
           }
 
 
           if (includes.local_experience) {
 
-            inclusionLabels.push(
-              "🤝 Local experiences"
-            );
-
-          }
-
-
-          if (includes.transport) {
-
-            inclusionLabels.push(
-              "🚐 Transport"
-            );
+            badges += `
+              <span>🤝 Local experiences</span>
+            `;
 
           }
 
 
           if (includes.activities) {
 
-            inclusionLabels.push(
-              "🌿 Activities"
-            );
+            badges += `
+              <span>🌿 Activities</span>
+            `;
 
           }
 
 
-          const inclusionHTML =
-            inclusionLabels.length
+          if (includes.camping) {
 
-              ? inclusionLabels
-                  .map(
-                    item =>
-                      `<span class="include-item">${item}</span>`
-                  )
-                  .join("")
+            badges += `
+              <span>🏕️ Camping</span>
+            `;
 
-              : `<span class="include-item">
-                   Personalized experience
-                 </span>`;
+          }
 
 
-          /*
-           * ---------------------------------------------
-           * DISPLAY AI PLAN
-           * ---------------------------------------------
-           */
+          if (includes.transport) {
 
-          const aiPlan =
-            data.ai_plan ||
-            "Your personalized TravelVibe plan is being prepared.";
+            badges += `
+              <span>🚗 Transport</span>
+            `;
 
+          }
+
+
+
+          // =================================================
+          // RESULT HTML
+          // =================================================
 
           plannerResult.innerHTML = `
 
             <div class="planner-card">
+
 
               <span class="eyebrow darkey">
                 YOUR TRAVELVIBE
@@ -1205,182 +1131,144 @@
               </h2>
 
 
-              <div class="planner-summary">
+              <p>
+                <strong>
+                  📍 Destination:
+                </strong>
 
-                <p>
+                ${escapeHtml(
+                  data.destination
+                )}
 
-                  <strong>
-                    📍 Destination:
-                  </strong>
-
-                  ${escapeHtml(data.destination)}
-
-                </p>
-
-
-                <p>
-
-                  <strong>
-                    👥 Travellers:
-                  </strong>
-
-                  ${data.travellers}
-
-                </p>
+              </p>
 
 
-                <p>
+              <p>
+                <strong>
+                  👥 Travellers:
+                </strong>
 
-                  <strong>
-                    🗓️ Duration:
-                  </strong>
+                ${data.travellers}
 
-                  ${data.days} day(s)
-
-                </p>
-
-
-                <p>
-
-                  <strong>
-                    📅 Preferred date:
-                  </strong>
-
-                  ${
-                    data.preferred_date
-                      ? escapeHtml(data.preferred_date)
-                      : "Flexible"
-                  }
-
-                </p>
+              </p>
 
 
-                <div class="budget-box">
+              <p>
+                <strong>
+                  🗓️ Duration:
+                </strong>
 
-                  <div>
-                    💰 Your Travel Budget
-                  </div>
+                ${data.days} day(s)
 
-                  <div class="budget-total">
+              </p>
 
-                    ₹${totalBudget.toLocaleString("en-IN")}
 
-                  </div>
+              <p>
+                <strong>
+                  📅 Preferred date:
+                </strong>
 
-                  <div class="budget-person">
+                ${escapeHtml(
+                  data.preferred_date ||
+                  "Flexible"
+                )}
 
-                    ₹${budgetPerPerson.toLocaleString("en-IN")}
-                    per person
+              </p>
 
-                  </div>
 
+              <!-- BUDGET -->
+
+              <div class="planner-message">
+
+                <h3>
+                  💰 Your Travel Budget
+                </h3>
+
+
+                <div
+                  style="
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin: 8px 0;
+                  "
+                >
+                  ₹${totalBudget}
                 </div>
 
 
-                <div class="include-list">
-
-                  ${inclusionHTML}
-
-                </div>
+                <p>
+                  ₹${budgetPerPerson}
+                  per person
+                </p>
 
               </div>
+
+
+
+              <!-- INCLUDED -->
+
+              <div
+                class="planner-includes"
+                style="
+                  display:flex;
+                  flex-wrap:wrap;
+                  gap:8px;
+                  margin:20px 0;
+                "
+              >
+
+                ${badges}
+
+              </div>
+
 
 
               <!-- AI PLAN -->
 
-              <div class="ai-plan">
+              <div
+                class="planner-ai-plan"
+                style="
+                  line-height:1.7;
+                  margin-top:20px;
+                "
+              >
 
-                <div class="ai-plan-content">
+                ${formatAIPlan(
+                  data.ai_plan
+                )}
 
-                  ${escapeHtml(aiPlan)}
+              </div>
 
-                </div>
+
+
+              <!-- MESSAGE -->
+
+              <div class="planner-message">
+
+                ✨
+                ${escapeHtml(
+                  data.message ||
+                  "Your TravelVibe plan is ready."
+                )}
 
               </div>
 
 
-              <!-- ACTIONS -->
 
-              <div class="planner-actions">
+              <!-- ENQUIRY -->
 
-                <a
-                  class="btn orange"
-                  href="contact.html"
-                >
-                  Send Enquiry →
-                </a>
+              <button
+                class="btn orange"
+                type="button"
+                onclick="sendEnquiry()"
+              >
+                Send Enquiry →
+              </button>
 
-                <button
-                  type="button"
-                  class="btn"
-                  id="planAgainButton"
-                >
-                  Plan Another Trip
-                </button>
-
-              </div>
 
             </div>
 
           `;
-
-
-          /*
-           * ---------------------------------------------
-           * PLAN AGAIN BUTTON
-           * ---------------------------------------------
-           */
-
-          const planAgainButton =
-            document.getElementById(
-              "planAgainButton"
-            );
-
-
-          if (planAgainButton) {
-
-            planAgainButton.addEventListener(
-              "click",
-              function () {
-
-                plannerForm.reset();
-
-                plannerResult.innerHTML = `
-
-                  <div class="planner-placeholder">
-
-                    <div class="planner-icon">
-                      🌴
-                    </div>
-
-                    <h2>
-                      Your TravelVibe starts here.
-                    </h2>
-
-                    <p>
-                      Tell us your destination,
-                      budget, group size and
-                      travel style.
-                    </p>
-
-                    <p>
-                      We'll find the experience
-                      that fits you.
-                    </p>
-
-                  </div>
-
-                `;
-
-                window.scrollTo({
-                  top: 0,
-                  behavior: "smooth"
-                });
-
-              }
-            );
-
-          }
 
 
         }
@@ -1388,11 +1276,9 @@
         catch (error) {
 
 
-          /*
-           * ---------------------------------------------
-           * ERROR HANDLING
-           * ---------------------------------------------
-           */
+          // =================================================
+          // ERROR
+          // =================================================
 
           console.error(
             "TravelVibe Planner Error:",
@@ -1402,44 +1288,32 @@
 
           plannerResult.innerHTML = `
 
-            <div class="planner-error">
+            <div class="planner-card">
+
+              <div class="planner-icon">
+                🌿
+              </div>
 
               <h2>
-                Something went wrong 🌿
+                We're having a little trouble.
               </h2>
 
               <p>
-
-                We couldn't create your
-                TravelVibe plan right now.
-
+                Your trip details could not be
+                processed right now.
               </p>
 
               <p>
-
-                Please try again in a moment
-                or contact us directly.
-
+                Please try again in a moment.
               </p>
 
-              <div class="planner-actions">
-
-                <button
-                  type="button"
-                  class="btn"
-                  onclick="location.reload()"
-                >
-                  Try Again
-                </button>
-
-                <a
-                  class="btn orange"
-                  href="contact.html"
-                >
-                  Contact TravelVibe →
-                </a>
-
-              </div>
+              <button
+                class="btn orange"
+                type="button"
+                onclick="location.reload()"
+              >
+                Try Again
+              </button>
 
             </div>
 
@@ -1447,48 +1321,24 @@
 
         }
 
+
         finally {
 
-          /*
-           * ---------------------------------------------
-           * RESTORE BUTTON
-           * ---------------------------------------------
-           */
 
-          plannerSubmit.disabled = false;
+          // =================================================
+          // RESTORE BUTTON
+          // =================================================
 
-          plannerSubmit.innerText =
+          submitButton.disabled =
+            false;
+
+
+          submitButton.textContent =
             "✨ Find My TravelVibe";
 
         }
 
-      }
-    );
-
-
-    /*
-     * =====================================================
-     * HTML ESCAPE FUNCTION
-     * =====================================================
-     *
-     * This prevents customer/API text from being inserted
-     * as executable HTML.
-     *
-     * =====================================================
-     */
-
-    function escapeHtml(value) {
-
-      const div =
-        document.createElement("div");
-
-      div.textContent =
-        String(value ?? "");
-
-      return div.innerHTML;
-
-    }
-
+      });
 
   </script>
 
