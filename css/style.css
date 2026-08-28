@@ -910,3 +910,142 @@ footer .container {
   }
 
 }
+/* ================================
+   TRAVELVIBE AI PLANNER
+================================ */
+
+.planner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: start;
+}
+
+.planner-grid .form {
+  width: 100%;
+}
+
+.planner-grid .form h2 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: -1.5px;
+}
+
+.planner-interests {
+  border: 1px solid #ddd3c7;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 0;
+  background: #fff;
+}
+
+.planner-interests legend {
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.planner-interests label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 7px 12px 7px 0;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.planner-interests input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  accent-color: #f15a24;
+}
+
+.planner-result {
+  min-height: 100%;
+  background: #fff;
+  border: 1px solid #e4dacd;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 45px #0000000b;
+}
+
+.planner-placeholder {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.planner-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.planner-placeholder h2 {
+  font-size: 32px;
+  letter-spacing: -1.5px;
+  margin: 0 0 12px;
+}
+
+.planner-placeholder p {
+  max-width: 400px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.planner-card h2 {
+  font-size: 35px;
+  letter-spacing: -2px;
+  margin: 5px 0 25px;
+}
+
+.planner-card p {
+  padding: 12px 0;
+  margin: 0;
+  border-bottom: 1px solid #eee5da;
+  color: #555;
+  line-height: 1.5;
+}
+
+.planner-message {
+  margin-top: 25px;
+  padding: 20px;
+  background: #eee4d4;
+  border-radius: 14px;
+  color: #333;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .planner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-result {
+    min-height: 400px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .planner-placeholder {
+    min-height: 350px;
+  }
+
+  .planner-placeholder h2 {
+    font-size: 27px;
+  }
+
+  .planner-card h2 {
+    font-size: 29px;
+  }
+
+}
