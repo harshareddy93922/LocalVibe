@@ -1,4 +1,4 @@
 window.TRAVELVIBE_SUPABASE = {
-  url: "PASTE_YOUR_SUPABASE_PROJECT_URL_HERE",
-  anonKey: "PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE"
+  url: "https://ziurhtiipjiccwywgewv.supabase.co",
+  anonKey: "sb_publishable_YoX_bCOWuZmpjH76J9jn7w_Pw4MeTP5'
 };
